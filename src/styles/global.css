@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  background: #141016;
+  color: #F2E9E4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove all scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+/* Glass button hover effect */
+.glass-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(231, 184, 201, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.glass-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Smooth text rendering */
+h1, h2, h3, h4, h5, h6, p {
+  text-rendering: optimizeLegibility;
+}
+
+/* Disable text selection on UI elements */
+button {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Performance optimizations */
+canvas {
+  will-change: transform;
+}
+
+.scene-container {
+  will-change: opacity, filter;
+}

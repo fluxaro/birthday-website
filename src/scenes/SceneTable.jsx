@@ -1,0 +1,35 @@
+import { motion } from 'framer-motion';
+import { BRAND } from '../theme/brandTokens';
+import { GlassButton } from '../components/GlassButton';
+
+export const SceneTable = ({ onNext }) => {
+  return (
+    <div className="w-full h-screen flex flex-col items-center justify-center px-6" style={{ background: `linear-gradient(135deg, ${BRAND.colors.warmBrownAccent} 0%, ${BRAND.colors.softPinkGlow}30 100%)` }}>
+      <motion.div className="relative z-20 text-center max-w-3xl">
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 0.5 }} style={{ fontSize: BRAND.typography.sizes.title, color: BRAND.colors.warmNeutral, fontWeight: 300, marginBottom: '2rem', lineHeight: BRAND.typography.lineHeight.relaxed }}>
+          I didn't add that just for fun.
+        </motion.p>
+
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 1.5 }} style={{ fontSize: BRAND.typography.sizes.body, color: BRAND.colors.warmNeutral, fontWeight: 300, marginBottom: '1.5rem', opacity: 0.9 }}>
+          I added it because that quiet focus, that sharp mind, that calm confidence…
+        </motion.p>
+
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 2.5 }} style={{ fontSize: BRAND.typography.sizes.body, color: BRAND.colors.softPinkGlow, fontWeight: 300, marginBottom: '1.5rem', opacity: 0.9 }}>
+          That's one of my favorite things about you.
+        </motion.p>
+
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 3.3 }} style={{ fontSize: BRAND.typography.sizes.body, color: BRAND.colors.warmNeutral, fontWeight: 300, marginBottom: '1.5rem', opacity: 0.9 }}>
+          You move with intention.
+        </motion.p>
+
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 4.1 }} style={{ fontSize: BRAND.typography.sizes.body, color: BRAND.colors.warmNeutral, fontWeight: 300, marginBottom: BRAND.spacing.section, opacity: 0.9 }}>
+          And it's beautiful.
+        </motion.p>
+
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 5 }}>
+          <GlassButton onClick={onNext}>continue</GlassButton>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+};

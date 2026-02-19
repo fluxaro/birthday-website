@@ -14,10 +14,10 @@ export const BRAND = {
       accent: "'Caveat', cursive",
     },
     sizes: {
-      hero: 'clamp(1.75rem, 4vw, 2.5rem)', // Reduced
-      title: 'clamp(1.25rem, 3vw, 1.75rem)', // Reduced
-      body: 'clamp(1rem, 2vw, 1.25rem)', // Reduced
-      small: 'clamp(0.875rem, 1.5vw, 1rem)', // Reduced
+      hero: 'clamp(2rem, 5vw, 3rem)', // Increased
+      title: 'clamp(1.5rem, 3.5vw, 2.25rem)', // Increased
+      body: 'clamp(1.125rem, 2.25vw, 1.5rem)', // Increased
+      small: 'clamp(1rem, 1.75vw, 1.25rem)', // Increased
     },
     lineHeight: {
       tight: 1.3,

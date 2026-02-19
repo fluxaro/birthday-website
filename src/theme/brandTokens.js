@@ -1,41 +1,42 @@
-// Brand System - STRICT ENFORCEMENT
+// Chapter 28 - Brand System
 export const BRAND = {
   colors: {
-    primaryBg: '#141016',
+    primaryBg: '#141016', // Deep plum-black
     secondaryDark: '#1C1521',
-    softPinkGlow: '#E7B8C9',
+    softPinkGlow: '#E7B8C9', // Muted dusty pink
     mutedRose: '#C88FA3',
-    warmBrownAccent: '#6A4E4B',
-    warmNeutral: '#F2E9E4',
+    warmBrownAccent: '#6A4E4B', // Soft brown
+    warmNeutral: '#F5F1F2', // Soft off-white
   },
   typography: {
-    fontFamily: "'Inter', 'Helvetica Neue', sans-serif",
+    fonts: {
+      body: "'Caveat', cursive", // All handwriting
+      accent: "'Caveat', cursive",
+    },
     sizes: {
-      hero: 'clamp(1.75rem, 4vw, 3rem)',
-      title: 'clamp(1.5rem, 3vw, 2.25rem)',
-      body: 'clamp(1rem, 1.5vw, 1.25rem)',
-      small: 'clamp(0.875rem, 1.25vw, 1rem)',
+      hero: 'clamp(1.75rem, 4vw, 2.5rem)', // Reduced
+      title: 'clamp(1.25rem, 3vw, 1.75rem)', // Reduced
+      body: 'clamp(1rem, 2vw, 1.25rem)', // Reduced
+      small: 'clamp(0.875rem, 1.5vw, 1rem)', // Reduced
     },
     lineHeight: {
-      tight: 1.2,
-      normal: 1.5,
+      tight: 1.3,
+      normal: 1.6,
       relaxed: 1.8,
     },
   },
   spacing: {
-    section: 'clamp(2rem, 5vw, 4rem)',
-    element: 'clamp(1rem, 3vw, 2rem)',
+    section: '3rem',
+    element: '1.5rem',
   },
   animation: {
     duration: {
-      fast: 0.4,
-      normal: 0.8,
-      slow: 1.2,
-      verySlow: 2.0,
+      fast: 0.6,
+      normal: 1.0,
+      slow: 1.5,
     },
     easing: {
-      smooth: [0.22, 0.61, 0.36, 1],
-      power2Out: [0.25, 0.46, 0.45, 0.94],
+      smooth: [0.25, 0.46, 0.45, 0.94],
     },
   },
 };

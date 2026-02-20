@@ -44,7 +44,7 @@ export const SceneManager = () => {
   ];
 
   return (
-    <div className="fixed inset-0" style={{ isolation: 'isolate', overflowY: 'auto', overflowX: 'hidden' }}>
+    <div className="fixed inset-0" style={{ isolation: 'isolate', overflowY: 'auto', overflowX: 'hidden', padding: '2rem 0' }}>
       <div style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
         <ParticleLayer />
       </div>
@@ -59,7 +59,7 @@ export const SceneManager = () => {
             duration: 0.6,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
-          style={{ position: 'relative', minHeight: '100vh', zIndex: 10 }}
+          style={{ position: 'relative', minHeight: 'calc(100vh - 4rem)', zIndex: 10 }}
         >
           {scenes[currentScene]}
         </motion.div>

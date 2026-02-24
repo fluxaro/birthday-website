@@ -43,7 +43,7 @@ export const Scene6_SuspenseBuild = ({ onNext }) => {
             fontFamily: BRAND.typography.fonts.body,
           }}
         >
-          so, I tried something
+          I did not just think about them
         </motion.p>
 
         <motion.p
@@ -59,7 +59,7 @@ export const Scene6_SuspenseBuild = ({ onNext }) => {
             fontFamily: BRAND.typography.fonts.body,
           }}
         >
-          I tried to imagine them
+          I kept something for them
         </motion.p>
 
         <motion.p
@@ -75,7 +75,7 @@ export const Scene6_SuspenseBuild = ({ onNext }) => {
             fontFamily: BRAND.typography.fonts.body,
           }}
         >
-          and I left something for them
+          …for you
         </motion.p>
 
         <motion.div
@@ -83,7 +83,7 @@ export const Scene6_SuspenseBuild = ({ onNext }) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 5 }}
         >
-          <GlassButton onClick={onNext}>wait… what?</GlassButton>
+          <GlassButton onClick={onNext}>show me</GlassButton>
         </motion.div>
       </motion.div>
     </div>

@@ -11,8 +11,6 @@ import { Scene3_ColorStory } from '../scenes/Scene3_ColorStory';
 import { Scene4_Childhood } from '../scenes/Scene4_Childhood';
 import { Scene5_UnseenVersions } from '../scenes/Scene5_UnseenVersions';
 import { Scene6_SuspenseBuild } from '../scenes/Scene6_SuspenseBuild';
-import { Scene7_TableClue } from '../scenes/Scene7_TableClue';
-import { Scene8_Return } from '../scenes/Scene8_Return';
 import { Scene9_EmotionCheck } from '../scenes/Scene9_EmotionCheck';
 import { Scene10_GentleConfession } from '../scenes/Scene10_GentleConfession';
 import { Scene11_OpenOcean } from '../scenes/Scene11_OpenOcean';
@@ -32,15 +30,13 @@ export const SceneManager = () => {
     <Scene4_Childhood key={4} onNext={nextScene} />,
     <Scene5_UnseenVersions key={5} onNext={nextScene} />,
     <Scene6_SuspenseBuild key={6} onNext={nextScene} />,
-    <Scene7_TableClue key={7} onNext={nextScene} />,
-    <Scene8_Return key={8} onNext={nextScene} />,
-    <Scene9_EmotionCheck key={9} onNext={nextScene} />,
-    <Scene10_GentleConfession key={10} onNext={nextScene} />,
-    <Scene11_OpenOcean key={11} onNext={nextScene} />,
-    <Scene12_BirthdayTruth key={12} onNext={nextScene} />,
-    <Scene13_FinalMain key={13} onNext={nextScene} />,
-    <Scene14_ChessEpilogue key={14} onNext={nextScene} />,
-    <Scene16_FinalScreen key={15} />,
+    <Scene9_EmotionCheck key={7} onNext={nextScene} />,
+    <Scene10_GentleConfession key={8} onNext={nextScene} />,
+    <Scene11_OpenOcean key={9} onNext={nextScene} />,
+    <Scene12_BirthdayTruth key={10} onNext={nextScene} />,
+    <Scene13_FinalMain key={11} onNext={nextScene} />,
+    <Scene14_ChessEpilogue key={12} onNext={nextScene} />,
+    <Scene16_FinalScreen key={13} />,
   ];
 
   return (

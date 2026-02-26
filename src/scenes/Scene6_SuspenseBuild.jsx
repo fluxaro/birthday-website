@@ -55,35 +55,19 @@ export const Scene6_SuspenseBuild = ({ onNext }) => {
             lineHeight: BRAND.typography.lineHeight.relaxed,
             color: BRAND.colors.warmNeutral,
             fontWeight: 300,
-            marginBottom: '2rem',
-            fontFamily: BRAND.typography.fonts.body,
-          }}
-        >
-          I kept something for them
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 3.5 }}
-          style={{
-            fontSize: BRAND.typography.sizes.body,
-            lineHeight: BRAND.typography.lineHeight.relaxed,
-            color: BRAND.colors.warmNeutral,
-            fontWeight: 300,
             marginBottom: '4rem',
             fontFamily: BRAND.typography.fonts.body,
           }}
         >
-          …for you
+          I wrote something down
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 5 }}
+          transition={{ duration: 1, delay: 3.5 }}
         >
-          <GlassButton onClick={onNext}>show me</GlassButton>
+          <GlassButton onClick={onNext}>where?</GlassButton>
         </motion.div>
       </motion.div>
     </div>

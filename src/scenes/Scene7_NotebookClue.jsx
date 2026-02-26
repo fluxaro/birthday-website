@@ -17,21 +17,55 @@ export const Scene7_NotebookClue = ({ onNext }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
           style={{
-            fontSize: BRAND.typography.sizes.title,
+            fontSize: BRAND.typography.sizes.body,
             lineHeight: BRAND.typography.lineHeight.relaxed,
             color: BRAND.colors.warmNeutral,
             fontWeight: 300,
-            marginBottom: '4rem',
+            marginBottom: '2rem',
             fontFamily: BRAND.typography.fonts.body,
           }}
         >
-          go check the pink notebook
+          i left something for you on the bed
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 2 }}
+          style={{
+            fontSize: BRAND.typography.sizes.body,
+            lineHeight: BRAND.typography.lineHeight.relaxed,
+            color: BRAND.colors.warmNeutral,
+            fontWeight: 300,
+            marginBottom: '2rem',
+            fontFamily: BRAND.typography.fonts.body,
+          }}
+        >
+          when u see it open it
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 4 }}
+          style={{
+            fontSize: BRAND.typography.sizes.small,
+            lineHeight: BRAND.typography.lineHeight.normal,
+            color: BRAND.colors.softPinkGlow,
+            fontWeight: 300,
+            marginBottom: '4rem',
+            opacity: 0.8,
+            fontStyle: 'italic',
+            fontFamily: BRAND.typography.fonts.body,
+          }}
+        >
+          hint: it is a pink notebook
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          transition={{ duration: 1, delay: 5.5 }}
         >
           <GlassButton onClick={onNext}>okay</GlassButton>
         </motion.div>
